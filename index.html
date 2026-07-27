@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monique Erasmus | Python Developer Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+            --success: #10b981;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.5;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: var(--text-main);
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+        }
+        .subtitle {
+            color: var(--accent);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 0 0 15px 0;
+        }
+        .contact-info {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+        .contact-info a {
+            color: var(--text-main);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--accent);
+        }
+        .contact-info a:hover {
+            color: var(--accent);
+        }
+        .cert-card {
+            background-color: #0c4a6e;
+            border: 1px solid #0369a1;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .cert-title {
+            font-weight: bold;
+            color: #e0f2fe;
+        }
+        .cert-issuer {
+            font-size: 0.85rem;
+            color: #7dd3fc;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 1.5rem;
+            color: var(--text-main);
+            border-left: 4px solid var(--accent);
+            padding-left: 12px;
+            margin-bottom: 25px;
+        }
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+        .project-title {
+            color: var(--accent);
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+        }
+        .project-desc {
+            color: var(--text-main);
+            margin: 0 0 15px 0;
+            font-size: 0.95rem;
+        }
+        .tech-tag {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+        }
+        .tech-tag strong {
+            color: var(--accent);
+        }
+        .btn {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            padding: 6px 16px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            margin-right: 10px;
+        }
+        .btn:hover {
+            background-color: var(--accent);
+            color: var(--bg-color);
+        }
+        .btn-small {
+            padding: 4px 12px;
+            font-size: 0.8rem;
+        }
+        .btn-success {
+            background-color: var(--success);
+            color: var(--bg-color);
+            border: 1px solid var(--success);
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 6px;
+        }
+        .btn-success:hover {
+            background-color: transparent;
+            color: var(--success);
+        }
+        footer {
+            border-top: 1px solid var(--border);
+            padding-top: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- HEADER PROFILE SECTION -->
+        <header>
+            <h1>Monique Erasmus</h1>
+            <p class="subtitle">Junior Python Developer</p>
+            <p class="contact-info">
+                📍 Brentwood Park, Benoni, South Africa &nbsp;|&nbsp; 
+                📞 <strong>Call:</strong> <a href="tel:+27816913934">081 691 3934</a> &nbsp;|&nbsp; 
+                💬 <strong>WhatsApp:</strong> <a href="https://wa.me" target="_blank">072 710 5295</a><br>
+                ✉️ <strong>Email:</strong> <a href="mailto:Monique.erasmus.dev@gmail.com">Monique.erasmus.dev@gmail.com</a> &nbsp;|&nbsp; 
+                🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/monique-erasmus-49930b354/" target="_blank">linkedin.com/in/monique-erasmus</a><br>
+                💻 <strong>GitHub:</strong> <a href="https://github.com/Twinflame1997" target="_blank">github.com/Twinflame1997</a><br><br>
+                📄 <a href="Monique_Erasmus_CV.pdf" target="_blank" style="color: var(--success); font-weight: bold; font-size: 1.1rem; border-bottom: 2px solid var(--success); padding-bottom: 2px;">View / Download My CV (PDF) ↗</a>
+            </p>
+        </header>
+
+        <!-- CERTIFICATIONS SECTION -->
+        <section>
+            <h2>Verified HackerRank Certifications</h2>
+            
+            <div class="cert-card" style="background-color: #064e3b; border: 1px solid #059669;">
+                <div>
+                    <div class="cert-title" style="color: #ecfdf5;">Python (Basic) Skill Verification</div>
+                    <div class="cert-issuer" style="color: #a7f3d0;">HackerRank Professional Certification</div>
+                </div>
+                <a href="https://www.hackerrank.com/certificates/iframe/096fd3afb42d" class="btn btn-small" target="_blank" style="color: #a7f3d0; border: 1px solid #059669;">Verify Badge ↗</a>
+            </div>
+
+            <div class="cert-card" style="background-color: #064e3b; border: 1px solid #059669;">
+                <div>
+                    <div class="cert-title" style="color: #ecfdf5;">SQL (Basic) Skill Verification</div>
+                    <div class="cert-issuer" style="color: #a7f3d0;">HackerRank Professional Certification</div>
+                </div>
+                <a href="https://www.hackerrank.com/certificates/iframe/096fd3afb42d" class="btn btn-small" target="_blank" style="color: #a7f3d0; border: 1px solid #059669;">Verify Badge ↗</a>
+            </div>
+
+            <div class="cert-card" style="background-color: #064e3b; border: 1px solid #059669;">
+                <div>
+                    <div class="cert-title" style="color: #ecfdf5;">SQL (Intermediate) Skill Verification</div>
+                    <div class="cert-issuer" style="color: #a7f3d0;">HackerRank Professional Certification</div>
+                </div>
+                <a href="https://www.hackerrank.com/certificates/iframe/f91f75fa7c12" class="btn btn-small" target="_blank" style="color: #a7f3d0; border: 1px solid #059669;">Verify Badge ↗</a>
+            </div>
+
+            <div class="cert-card" style="background-color: #022c22; border: 2px solid #10b981;">
+                <div>
+                    <div class="cert-title" style="font-weight: bold; color: #f0fdf4;">🏆 SQL (Advanced) Database Mastery</div>
+                    <div class="cert-issuer" style="font-size: 0.85rem; color: #34d399;">HackerRank Professional Certification</div>
+                </div>
+                <a href="https://www.hackerrank.com/certificates/iframe/d445a73df75f" class="btn btn-small" target="_blank" style="color: #f0fdf4; background-color: #059669; border: 1px solid #10b981;">Verify Mastery ↗</a>
+            </div>
+        
+
+        <!-- PORTFOLIO PROJECTS SECTION -->
+        <section>
+            <h2>Featured Python Production Code</h2>
+
+            <!-- REPO 1: INVENTORY MANAGEMENT SYSTEM -->
+            <div class="project-card">
+                <div class="project-title">📦 Shop Inventory Management System</div>
+                <p class="project-desc">A professional backend tool built to track warehouse stock levels. Features item addition/removal workflows and text file storage for persistence so stock values are completely preserved between runs.</p>
+                <div class="tech-tag"><strong>Skills Used:</strong> Object-Oriented Blueprint Structure, File I/O Systems, Exception Handling</div>
+                <a href="https://github.com" class="btn" target="_blank">View Code Repository</a>
+            </div>
+
+            <!-- REPO 2: EXPENSE TRACKER -->
+            <div class="project-card">
+                <div class="project-title">📊 Personal Expense Tracker Ledger</div>
+                <p class="project-desc">A financial data script designed to log transactional budgets. It handles persistent JSON storage, meaning your logged budget records remain safely saved even after closing the program execution screen.</p>
+                <div class="tech-tag"><strong>Skills Used:</strong> Local File Storage Persistence, JSON State Serialization, Dictionaries</div>
+                <a href="https://github.com" class="btn" target="_blank">View Code Repository</a>
+            </div>
+
+            <!-- REPO 3: CONTACT BOOK -->
+            <div class="project-card">
+                <div class="project-title">👥 Command-Line Contact Directory</div>
+                <p class="project-desc">A database utility script engineered to execute complete CRUD operations. It houses both my contact book management and validation files to allow safe contact modifications inside organized dictionaries.</p>
+                <div class="tech-tag"><strong>Skills Used:</strong> CRUD Database Logic, Modular Functions, Data Mutations</div>
+                <a href="https://github.com" class="btn" target="_blank">View Code Repository</a>
+            </div>
+
+            <!-- REPO 4: UTILITY SCRIPTS -->
+            <div class="project-card">
+                <div class="project-title">🛠️ Core Python Utility Scripts Suite</div>
+                <p class="project-desc">A curated compilation of everyday utility programs, combining an Age Calculator script that runs automated date parsing with an academic Student Tracker that automates grade averages.</p>
+                <div class="tech-tag"><strong>Skills Used:</strong> System Calculations, Arithmetic Operators, Date Modules, Loops</div>
+                <a href="https://github.com" class="btn" target="_blank">View Code Repository</a>
+            </div>
+        
+
+        <!-- TECHNICAL SKILLS OVERVIEW -->
+        <section>
+            <h2>Skills &amp; General Details Matrix</h2>
+            <p style="font-size: 0.95rem; color: var(--text-main); background: var(--card-bg); padding: 20px; border-radius: 8px; border: 1px solid var(--border);">
+                <strong>Technical Skills:</strong> Python Core, Basic/Intermediate/Advanced SQL, Git Version Control, VS Code, File Storage Persistence<br><br>
+                <strong>Business Operations:</strong> Admin Assistance, Stock Control Management, Customer Support Liaison, Performance Analytics Reporting<br><br>
+                <strong>Languages:</strong> English (Fluent), Afrikaans (Fluent)<br><br>
+                <strong>Logistics:</strong> Driver’s License (Code B), Own reliable personal vehicle available for on-site or hybrid shifts
+            </p>
+        
+
+        <!-- BOTTOM CALL TO ACTION FOOTER -->
+        <footer>
+            <h2 style="border-left: none; padding-left: 0; margin-bottom: 15px;">Let's Build Something Together</h2>
+            <p style="color: var(--text-muted); margin-bottom: 25px;">I am actively open to junior developer positions, engineering internships, and backend automation opportunities throughout South Africa.</p>
+            <a href="https://wa.me" class="btn btn-success" target="_blank">💬 Let's Chat on WhatsApp</a>
+            <a href="mailto:Monique.erasmus.dev@gmail.com" class="btn" style="padding: 10px 20px;">✉️ Send an Email</a>
+        </footer>
+
+    </div>
+
+</body>
+</html>
